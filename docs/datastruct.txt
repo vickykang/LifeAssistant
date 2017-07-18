@@ -1,0 +1,25 @@
+irBean: 飞机数据类
+company: String 航空公司名称
+name: String 飞机名称
+model: String 飞机型号
+size: String 飞机大小（小、中、大等）
+
+SiteBean: 机场数据类
+province: String 机场所在省份
+city: String 机场所在城市
+name: String 机场名称
+
+TimeBean: 日期时间数据类
+date: String 日期
+time: String 时间
+
+
+TicketBean: 机票数据类
+startSite: SiteBean 出发机场
+endSite: SiteBean 到达机场
+startTime: TimeBean 出发日期时间
+endTime: TimeBean 到达日期时间
+air: AirBean 飞机
+duration: long 时长
+price: int 价格
+isNonstop: boolean 是否直达
