@@ -5,22 +5,22 @@ package com.flyme.meditation.lifeassistant.bean;
  */
 
 public class TimeBean extends BaseBean {
-    private String date;
-    private String time;
+    private long date;
+    private long time;
 
-    public String getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(long date) {
         this.date = date;
     }
 
-    public String getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(long time) {
         this.time = time;
     }
 }

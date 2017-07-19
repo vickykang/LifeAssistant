@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_normal">16sp</dimen>
+
+    <dimen name="padding_horizontal_main">12dip</dimen>
+    <dimen name="padding_vertical_main">12dip</dimen>
+    <dimen name="switch_size">48dip</dimen>
+    <dimen name="search_text_height">56dip</dimen>
+</resources>
