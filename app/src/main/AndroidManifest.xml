@@ -18,6 +18,9 @@
 
         <activity android:name=".CalendarActivity"
             android:label="@string/select_date" />
+
+        <activity android:name=".FakeResultActivity"
+            android:label="@string/search_result" />
     </application>
 
 </manifest>

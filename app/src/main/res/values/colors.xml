@@ -3,4 +3,10 @@
     <color name="colorPrimary">#7ba1a8</color>
     <color name="colorPrimaryDark">#5d828a</color>
     <color name="colorAccent">#c35655</color>
+
+    <color name="text_empty">#9f9f9f</color>
+    <color name="text_price">#f55555</color>
+
+    <color name="bg_list_item">#f2f2f2</color>
+    <color name="bg_list_item_clicked">#feeff0</color>
 </resources>
