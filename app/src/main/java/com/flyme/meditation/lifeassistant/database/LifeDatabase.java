@@ -88,22 +88,53 @@ public class LifeDatabase extends SQLiteOpenHelper {
     }
 
     public List<TicketBean> getTickets(String start, String end, long date) {
+
+        List<SiteBean> startSiteList = querySite(start);
+        List<SiteBean> endSiteList = querySite(end);
+
+        if (startSiteList == null || startSiteList.size() == 0 || endSiteList == null
+                || endSiteList.size() == 0) {
+            return null;
+        }
+
         List<TicketBean> tickets = new ArrayList<>();
 
-        SQLiteDatabase db = sInstance.getWritableDatabase();
+        StringBuilder builder = new StringBuilder();
+        String[] args = new String[startSiteList.size() * endSiteList.size()];
 
+        final int slen = startSiteList.size();
+        final int elen = startSiteList.size();
+
+
+
+        SQLiteDatabase db = sInstance.getWritableDatabase();
         return tickets;
     }
 
-    public List<SiteBean> querySite(String start, String end) {
+    public List<SiteBean> querySite(String name) {
         SQLiteDatabase db = sInstance.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_SITE, null, buildSiteSelection(), new String[] {name, name},
+                null, null, null);
+        List<SiteBean> sites = new ArrayList<>();
+        try {
+            while (cursor.moveToNext()) {
+                SiteBean site = new SiteBean();
+                site.setId(cursor.getLong(cursor.getColumnIndexOrThrow(Columns._ID)));
+                site.setProvince(cursor.getString(cursor.getColumnIndexOrThrow(
+                        Columns.COLUMN_PROVINCE)));
+                site.setCity(cursor.getString(cursor.getColumnIndexOrThrow(Columns.COLUMN_CITY)));
+                site.setCity(cursor.getString(cursor.getColumnIndexOrThrow(
+                        Columns.COLUMN_SITE_NAME)));
+                sites.add(site);
+            }
+        } finally {
+            cursor.close();
+        }
+        return sites;
     }
 
-    private String buildSiteQuery(String start, String end) {
-        StringBuilder builder = new StringBuilder();
-        builder.append(Columns.COLUMN_CITY)
-                .append(" = ? ");
-        return builder.toString();
+    private String buildSiteSelection() {
+        return Columns.COLUMN_CITY + " = ? OR " + Columns.COLUMN_SITE_NAME + " = ?";
     }
 
     private void createTableTicket(SQLiteDatabase db) {
