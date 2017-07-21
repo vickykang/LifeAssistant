@@ -20,7 +20,8 @@
             android:id="@+id/edt_start"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="广州" />
 
         <ImageView
             android:id="@+id/iv_switch"
@@ -32,7 +33,8 @@
             android:id="@+id/edt_end"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="厦门"  />
 
     </LinearLayout>
 

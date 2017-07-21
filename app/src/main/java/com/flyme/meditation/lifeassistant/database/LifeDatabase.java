@@ -71,22 +71,6 @@ public class LifeDatabase extends SQLiteOpenHelper {
         return db.insert(TABLE_SITE, null, values);
     }
 
-    public long insertTicket(TicketBean ticket) {
-        SQLiteDatabase db = sInstance.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(Columns.COLUMN_START_SITE_ID, ticket.getStartSite().getId());
-        values.put(Columns.COLUMN_END_SITE_ID, ticket.getEndSite().getId());
-        values.put(Columns.COLUMN_START_DATE, ticket.getStartTime().getDate());
-        values.put(Columns.COLUMN_START_TIME, ticket.getStartTime().getTime());
-        values.put(Columns.COLUMN_END_DATE, ticket.getEndTime().getDate());
-        values.put(Columns.COLUMN_END_TIME, ticket.getEndTime().getTime());
-        values.put(Columns.COLUMN_AIR_ID, ticket.getAir().getId());
-        values.put(Columns.COLUMN_DURATION, ticket.getDuration());
-        values.put(Columns.COLUMN_PRICE, ticket.getPrice());
-        values.put(Columns.COLUMN_IS_NONSTOP, ticket.isNonstop() ? 0 : 1);
-        return db.insert(TABLE_TICKET, null, values);
-    }
-
     public List<TicketBean> getTickets(String start, String end, long date) {
 
         List<SiteBean> startSiteList = querySite(start);

@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final int REQUEST_CALENDAR_CODE = 1;
 
+    public static final String EXTRA_START_SITE = "start_site";
+    public static final String EXTRA_END_SITE = "end_site";
+    public static final String EXTRA_SELECTED_DATE = "selected_date";
+
     private EditText mStartEditText;
     private EditText mEndEditText;
     private View mSwitchButton;
@@ -27,12 +31,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String mEnd;
     private Calendar mSelectedDate;
 
+    private DataManager mDataManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        mDataManager = DataManager.getInstance(this);
         mSelectedDate = Calendar.getInstance();
+        mSelectedDate.set(2017, 10 - 1, 1);
     }
 
     private void initView() {
@@ -110,6 +118,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void searchTicket() {
+        mStart = mStartEditText.getText().toString();
+        mEnd = mEndEditText.getText().toString();
 
+        Intent intent = new Intent(this, FakeResultActivity.class);
+        intent.putExtra(EXTRA_START_SITE, mStart);
+        intent.putExtra(EXTRA_END_SITE, mEnd);
+        intent.putExtra(EXTRA_SELECTED_DATE, mSelectedDate);
+        startActivity(intent);
     }
 }

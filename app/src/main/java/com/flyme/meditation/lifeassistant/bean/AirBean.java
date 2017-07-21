@@ -1,5 +1,7 @@
 package com.flyme.meditation.lifeassistant.bean;
 
+import android.text.TextUtils;
+
 /**
  * Created by kangweodai on 18/07/17.
  */
@@ -41,5 +43,23 @@ public class AirBean extends BaseBean {
 
     public void setSize(String size) {
         this.size = size;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append(company)
+                .append(" ")
+                .append(name);
+        if (!TextUtils.isEmpty(model)) {
+            builder.append(" | ")
+                    .append(model);
+            if (!TextUtils.isEmpty(size)) {
+                builder.append("(")
+                        .append(size)
+                        .append(")");
+            }
+        }
+        return builder.toString();
     }
 }
