@@ -36,7 +36,11 @@
         "price":"2585",
         "clazz":"头等舱"
       }
-    ]
+    ],
+    "source":{
+      "name":"去哪儿",
+      "url":""
+    }
   },
   {
     "startSite": {

@@ -123,7 +123,13 @@ public class DataManager {
 
         @Override
         public int compare(TicketBean o1, TicketBean o2) {
-            return o1.getPrice() > o2.getPrice() ? 1 : (o1.getPrice() < o2.getPrice() ? -1 : 0);
+            if (o1.getPrice() > o2.getPrice()) {
+                return 1;
+            }
+            if (o1.getPrice() < o2.getPrice()) {
+                return -1;
+            }
+            return o1.getStartTime().getTime().compareTo(o2.getStartTime().getTime());
         }
 
         @Override

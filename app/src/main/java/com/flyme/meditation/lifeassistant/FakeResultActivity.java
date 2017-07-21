@@ -148,7 +148,7 @@ public class FakeResultActivity extends AppCompatActivity
             }
 
             holder.tvStartTime.setText(ticket.getStartTime().getTime());
-            holder.tvEndTime.setText(ticket.getStartTime().getTime());
+            holder.tvEndTime.setText(ticket.getEndTime().getTime());
             holder.tvStartSite.setText(ticket.getStartSite().getName());
             holder.tvEndSite.setText(ticket.getEndSite().getName());
             holder.tvPrice.setText("￥" + ticket.getPrice());
