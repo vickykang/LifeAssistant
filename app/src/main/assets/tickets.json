@@ -37,10 +37,28 @@
         "clazz": "头等舱"
       }
     ],
-    "source": {
-      "name": "去哪儿",
-      "url": ""
-    }
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1134",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "1155",
+        "url": ""
+      }
+    ]
   },
   {
     "startSite": {
@@ -80,10 +98,28 @@
         "clazz": "头等舱"
       }
     ],
-    "source": {
-      "name": "飞猪",
-      "url": ""
-    }
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1088",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "899",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "890",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "898",
+        "url": ""
+      }
+    ]
   },
   {
     "startSite": {
@@ -123,10 +159,28 @@
         "clazz": "头等舱"
       }
     ],
-    "source": {
-      "name": "携程",
-      "url": ""
-    }
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "788",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "780",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "788",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "800",
+        "url": ""
+      }
+    ]
   },
   {
     "startSite": {
@@ -166,10 +220,28 @@
         "clazz": "头等舱"
       }
     ],
-    "source": {
-      "name": "蚂蜂窝",
-      "url": ""
-    }
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1166",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "1155",
+        "url": ""
+      }
+    ]
   },
   {
     "startSite": {
@@ -209,10 +281,28 @@
         "clazz": "头等舱"
       }
     ],
-    "source": {
-      "name": "飞猪",
-      "url": ""
-    }
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "988",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "998",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "960",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "988",
+        "url": ""
+      }
+    ]
   },
   {
     "startSite": {
@@ -252,7 +342,7 @@
         "clazz": "头等舱"
       }
     ],
-    "source": [
+    "sources": [
       {
         "name": "去哪儿",
         "price": "1188",
@@ -321,7 +411,7 @@
         "clazz": "公务舱"
       }
     ],
-    "source": [
+    "sources": [
       {
         "name": "去哪儿",
         "price": "1424",
@@ -382,7 +472,7 @@
         "clazz": "头等舱"
       }
     ],
-    "source": [
+    "sources": [
       {
         "name": "去哪儿",
         "price": "1288",
