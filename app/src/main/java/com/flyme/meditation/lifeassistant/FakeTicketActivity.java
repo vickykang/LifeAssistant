@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
+import android.view.View;
 
 import com.flyme.meditation.lifeassistant.bean.SourceBean;
 import com.flyme.meditation.lifeassistant.bean.TicketBean;
@@ -21,16 +21,12 @@ import java.util.List;
  */
 public class FakeTicketActivity extends AppCompatActivity {
 
-    private TextView mInfoTextView;
-    private TextView mStartTimeView;
-    private TextView mEndTimeView;
-    private TextView mStartSiteView;
-    private TextView mEndSiteView;
-    private TextView mDurationView;
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
 
     private FragmentPagerAdapter mAdapter;
+
+    private TicketInfoHelper mTicketInfoHelper;
 
     private TicketBean mTicket;
 
@@ -44,12 +40,10 @@ public class FakeTicketActivity extends AppCompatActivity {
 
         setTitle(mTicket.getStartSite().getCity() + " - " + mTicket.getEndSite().getCity());
 
-        mInfoTextView = (TextView) findViewById(R.id.tv_info);
-        mStartTimeView = (TextView) findViewById(R.id.tv_start_time);
-        mEndTimeView = (TextView) findViewById(R.id.tv_end_time);
-        mStartSiteView = (TextView) findViewById(R.id.tv_start_site);
-        mEndSiteView = (TextView) findViewById(R.id.tv_end_site);
-        mDurationView = (TextView) findViewById(R.id.tv_duration);
+        View rootView = findViewById(R.id.root);
+        mTicketInfoHelper = new TicketInfoHelper(this, rootView);
+        mTicketInfoHelper.bindView(mTicket);
+
         mTabLayout = (TabLayout) findViewById(R.id.tab_source);
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
 
@@ -57,18 +51,6 @@ public class FakeTicketActivity extends AppCompatActivity {
         mViewPager.setAdapter(mAdapter);
 
         mTabLayout.setupWithViewPager(mViewPager);
-
-        bindView();
-    }
-
-    private void bindView() {
-        mInfoTextView.setText(mTicket.getAir().getCompany() + " " + mTicket.getAir().getName()
-                + " " + mTicket.getStartTime().getDate());
-        mStartTimeView.setText(mTicket.getStartTime().getTime());
-        mEndTimeView.setText(mTicket.getEndTime().getTime());
-        mStartSiteView.setText(mTicket.getStartSite().getName());
-        mEndSiteView.setText(mTicket.getEndSite().getName());
-        mDurationView.setText(DataManager.formatDuration(this, mTicket.getDuration()));
     }
 
     private class SourceFragmentAdapter extends FragmentPagerAdapter {
@@ -82,7 +64,7 @@ public class FakeTicketActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return SourcePriceFragment.newInstance(sources.get(position));
+            return SourcePriceFragment.newInstance(sources.get(position), mTicket);
         }
 
         @Override

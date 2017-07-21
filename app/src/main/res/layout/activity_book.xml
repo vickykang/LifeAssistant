@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/module_tick_info" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:padding="@dimen/padding_vertical_main"
+                android:textSize="@dimen/font_normal"
+                android:text="经济舱" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/passenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_vertical_main"
+                android:drawableEnd="@drawable/ic_plus"
+                android:textSize="@dimen/font_ticket_order"
+                android:text="@string/passenger" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/divider" />
+
+           <include layout="@layout/module_contact" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold"
+            android:textColor="@color/text_price"
+            android:text="￥1155" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="96dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@android:color/white"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

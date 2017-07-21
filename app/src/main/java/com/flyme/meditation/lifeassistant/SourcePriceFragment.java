@@ -1,8 +1,10 @@
 package com.flyme.meditation.lifeassistant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.flyme.meditation.lifeassistant.bean.SourceBean;
+import com.flyme.meditation.lifeassistant.bean.TicketBean;
 import com.flyme.meditation.lifeassistant.database.ClazzBean;
 
 /**
@@ -21,16 +24,19 @@ import com.flyme.meditation.lifeassistant.database.ClazzBean;
 public class SourcePriceFragment extends Fragment {
 
     public static final String ARG_SOURCE = "sources";
+    public static final String ARG_TICKET = "ticket";
 
     private ListView mList;
     private BaseAdapter mAdapter;
 
     private SourceBean mSource;
+    private TicketBean mTicket;
 
-    public static SourcePriceFragment newInstance(SourceBean source) {
+    public static SourcePriceFragment newInstance(SourceBean source, TicketBean ticket) {
         SourcePriceFragment fragment = new SourcePriceFragment();
         Bundle args = new Bundle();
         args.putSerializable(ARG_SOURCE, source);
+        args.putSerializable(ARG_TICKET, ticket);
         fragment.setArguments(args);
         return fragment;
     }
@@ -43,6 +49,7 @@ public class SourcePriceFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mSource = (SourceBean) getArguments().getSerializable(ARG_SOURCE);
+        mTicket = (TicketBean) getArguments().getSerializable(ARG_TICKET);
     }
 
     @Nullable
@@ -100,7 +107,11 @@ public class SourcePriceFragment extends Fragment {
             holder.btnBook.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    Intent intent = new Intent(getActivity(), BookActivity.class);
+                    intent.putExtra(BookActivity.EXTRA_TICKET, mTicket);
+                    intent.putExtra(BookActivity.EXTRA_SOURCE, mSource);
+                    intent.putExtra(BookActivity.EXTRA_CLAZZ, clazz);
+                    startActivity(intent);
                 }
             });
             return convertView;

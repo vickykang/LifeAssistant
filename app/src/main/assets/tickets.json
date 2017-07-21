@@ -46,7 +46,7 @@
       {
         "name": "携程",
         "price": "1188",
-        "url": "",
+        "url": "http://m.ctrip.com/html5/Flight/swift/domestic/cabinlist?triptype=1&fromlist=true",
         "clazzs": [
           {
             "price": "1188",

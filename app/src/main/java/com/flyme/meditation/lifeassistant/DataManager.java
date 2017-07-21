@@ -55,7 +55,7 @@ public class DataManager {
     }
 
     public List<TicketBean> searchTickets(String start, String end, Calendar calendar) {
-        String date = formatDate(calendar);
+        String date = Utils.formatDate(calendar);
         List<TicketBean> results = new ArrayList<>();
 
         SourcePriceComparator sourceComparator = new SourcePriceComparator();
@@ -91,39 +91,6 @@ public class DataManager {
             Log.e(TAG, Log.getStackTraceString(e));
         }
         return buf.toString();
-    }
-
-    public String formatDate(Calendar calendar) {
-        return DateFormat.format("yyyy-MM-dd", calendar).toString();
-    }
-
-    public String formatDate(int year, int month, int date) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(year, month - 1, date);
-        return formatDate(calendar);
-    }
-
-    public Calendar stringToCalendar(String date) {
-        if (date.contains("-")) {
-            String[] data = date.split("-");
-            if (data.length == 3) {
-                Calendar calendar = Calendar.getInstance();
-                calendar.set(Integer.getInteger(data[0]),
-                        Integer.getInteger(data[1]) - 1,
-                        Integer.getInteger(data[2]));
-            }
-        }
-        return null;
-    }
-
-    public static String formatDuration(Context context, int duration) {
-        StringBuilder builder = new StringBuilder();
-        int h = duration / 60;
-        if (h > 0) {
-            builder.append(h).append(context.getString(R.string.hour));
-        }
-        builder.append(duration - h * 60).append(context.getString(R.string.minute));
-        return builder.toString();
     }
 
     private class TicketPriceComparator implements Comparator<TicketBean> {

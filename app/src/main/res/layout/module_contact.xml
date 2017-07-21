@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_vertical_main">
+
+        <TextView
+            android:id="@+id/title_contact"
+            android:layout_width="96dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_ticket_order"
+            android:text="@string/contact" />
+
+        <EditText
+            android:id="@+id/edt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_ticket_order"
+            android:hint="@string/contact_hint"
+            android:background="@null"
+            android:lines="1"
+            android:imeOptions="actionNext" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_vertical_main">
+
+        <TextView
+            android:id="@+id/title_phone"
+            android:layout_width="96dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_ticket_order"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_ticket_order"
+            android:hint="@string/phone_hint"
+            android:inputType="phone"
+            android:background="@null"
+            android:lines="1"
+            android:imeOptions="actionNext" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_vertical_main">
+
+        <TextView
+            android:id="@+id/title_email"
+            android:layout_width="96dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_ticket_order"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_ticket_order"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:background="@null"
+            android:lines="1"
+            android:imeOptions="actionNext" />
+
+    </LinearLayout>
+
+</LinearLayout>

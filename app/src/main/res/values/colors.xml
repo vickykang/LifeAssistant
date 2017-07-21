@@ -13,6 +13,7 @@
 
     <color name="btn_normal">#e8853b</color>
     <color name="btn_clicked">#e66233</color>
+    <color name="btn_disabled">@color/text_empty</color>
 
-    <color name="divider">#ffffff</color>
+    <color name="divider">#f5f5ff</color>
 </resources>
