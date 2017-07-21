@@ -8,7 +8,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Loginctivity">
+        <activity
+            android:name=".SplashActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=":login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,22 +21,46 @@
         </activity>
 
         <activity
+            android:name=".LoginActivity"
+            android:taskAffinity=":login" />
+        <activity
+            android:name=".RegActivity"
+            android:label="@string/reg"
+            android:parentActivityName=".LoginActivity"
+            android:taskAffinity=":login" />
+
+        <activity
             android:name=".MainActivity"
             android:alwaysRetainTaskState="true"
             android:label="@string/app_name"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:taskAffinity=":user" />
+
+        <activity
+            android:name=".PersonActivity"
+            android:label="@string/person"
+            android:parentActivityName=".MainActivity"
+            android:taskAffinity=":user" />
 
         <activity
             android:name=".CalendarActivity"
-            android:label="@string/select_date" />
+            android:label="@string/select_date"
+            android:parentActivityName=".MainActivity"
+            android:taskAffinity=":user" />
 
         <activity
             android:name=".FakeResultActivity"
-            android:label="@string/search_result" />
+            android:label="@string/search_result"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivity"
+            android:taskAffinity=":user" />
 
         <activity
             android:name=".FakeTicketActivity"
-            android:label="@string/book_ticket" />
+            android:label="@string/book_ticket"
+            android:launchMode="singleTask"
+            android:parentActivityName=".FakeResultActivity"
+            android:taskAffinity=":user" />
     </application>
 
 </manifest>

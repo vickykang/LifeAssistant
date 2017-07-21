@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">机票助手</string>
+    <string name="app_name">快省机票</string>
     <string name="login">登 录</string>
     <string name="reg">立即注册</string>
     <string name="search">搜 索</string>
@@ -17,6 +17,10 @@
     <string name="minute">分钟</string>
 
     <string name="price">价格</string>
+
     <string name="input_account">请输入帐号</string>
     <string name="input_password">请输入密码</string>
+    <string name="input_password_confirm">重复输入密码</string>
+    <string name="person">个人中心</string>
+    <string name="logout">退出登录</string>
 </resources>
