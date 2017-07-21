@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Loginctivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,13 +16,22 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CalendarActivity"
+        <activity
+            android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".CalendarActivity"
             android:label="@string/select_date" />
 
-        <activity android:name=".FakeResultActivity"
+        <activity
+            android:name=".FakeResultActivity"
             android:label="@string/search_result" />
 
-        <activity android:name=".FakeTicketActivity"
+        <activity
+            android:name=".FakeTicketActivity"
             android:label="@string/book_ticket" />
     </application>
 
