@@ -27,36 +27,66 @@
     },
     "price": "1134",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "1134",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "2585",
-        "clazz": "头等舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "1134",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1134",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2585",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "1188",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1188",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2585",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "1188",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1188",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2585",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "1155",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1155",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2585",
+            "clazz": "头等舱"
+          }
+        ]
       }
     ]
   },
@@ -88,36 +118,66 @@
     },
     "price": "890",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "890",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "2055",
-        "clazz": "头等舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "1088",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1088",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2055",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "899",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "899",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2055",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "890",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "890",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2055",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "898",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "898",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2055",
+            "clazz": "头等舱"
+          }
+        ]
       }
     ]
   },
@@ -149,36 +209,66 @@
     },
     "price": "780",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "780",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "1850",
-        "clazz": "头等舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "788",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "788",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1850",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "780",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "780",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1850",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "788",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "788",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1850",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "800",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "800",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1850",
+            "clazz": "头等舱"
+          }
+        ]
       }
     ]
   },
@@ -210,36 +300,66 @@
     },
     "price": "1155",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "1155",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "2455",
-        "clazz": "头等舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "1166",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1166",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "1188",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1188",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "1188",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1188",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "1155",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1155",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       }
     ]
   },
@@ -271,36 +391,66 @@
     },
     "price": "960",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "960",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "1620",
-        "clazz": "头等舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "988",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "988",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1620",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "998",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "998",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1620",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "960",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "960",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1620",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "988",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "988",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "1620",
+            "clazz": "头等舱"
+          }
+        ]
       }
     ]
   },
@@ -332,36 +482,66 @@
     },
     "price": "1155",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "1155",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "2855",
-        "clazz": "头等舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "1188",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1188",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2855",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "1155",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1155",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2855",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "1188",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1188",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2855",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "1218",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1218",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2855",
+            "clazz": "头等舱"
+          }
+        ]
       }
     ]
   },
@@ -393,44 +573,98 @@
     },
     "price": "1424",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "1424",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "2265",
-        "clazz": "公务舱"
-      },
-      {
-        "price": "3605",
-        "clazz": "公务舱"
-      },
-      {
-        "price": "5705",
-        "clazz": "公务舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "1424",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1424",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2265",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "3605",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "5705",
+            "clazz": "公务舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "1456",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1456",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2265",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "3605",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "5705",
+            "clazz": "公务舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "1488",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1488",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2265",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "3605",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "5705",
+            "clazz": "公务舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "1518",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1518",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2265",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "3605",
+            "clazz": "公务舱"
+          },
+          {
+            "price": "5705",
+            "clazz": "公务舱"
+          }
+        ]
       }
     ]
   },
@@ -462,36 +696,66 @@
     },
     "price": "1155",
     "isNonstop": true,
-    "clazzs": [
-      {
-        "price": "1155",
-        "clazz": "经济舱"
-      },
-      {
-        "price": "2455",
-        "clazz": "头等舱"
-      }
-    ],
     "sources": [
       {
         "name": "去哪儿",
         "price": "1288",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1288",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "携程",
         "price": "1218",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1218",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "飞猪",
         "price": "1155",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1155",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       },
       {
         "name": "蚂蜂窝",
         "price": "1188",
-        "url": ""
+        "url": "",
+        "clazzs": [
+          {
+            "price": "1188",
+            "clazz": "经济舱"
+          },
+          {
+            "price": "2455",
+            "clazz": "头等舱"
+          }
+        ]
       }
     ]
   }

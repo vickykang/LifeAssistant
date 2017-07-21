@@ -153,6 +153,11 @@ public class FakeResultActivity extends AppCompatActivity
             holder.tvEndSite.setText(ticket.getEndSite().getName());
             holder.tvPrice.setText("￥" + ticket.getPrice());
             holder.tvAir.setText(ticket.getAir().toString());
+            if (ticket.getSources() != null && ticket.getSources().size() > 0) {
+                holder.tvSource.setText(ticket.getSources().get(0).getName());
+            } else {
+                holder.tvSource.setVisibility(View.GONE);
+            }
 
             return convertView;
         }
@@ -166,6 +171,7 @@ public class FakeResultActivity extends AppCompatActivity
         TextView tvEndSite;
         TextView tvPrice;
         TextView tvAir;
+        TextView tvSource;
 
         ViewHolder(View view) {
             tvStartTime = (TextView) view.findViewById(R.id.tv_start_time);
@@ -174,6 +180,7 @@ public class FakeResultActivity extends AppCompatActivity
             tvEndSite = (TextView) view.findViewById(R.id.tv_end_site);
             tvPrice = (TextView) view.findViewById(R.id.tv_price);
             tvAir = (TextView) view.findViewById(R.id.tv_air);
+            tvSource = (TextView) view.findViewById(R.id.tv_source);
         }
     }
 }

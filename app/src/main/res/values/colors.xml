@@ -6,6 +6,7 @@
 
     <color name="text_empty">#9f9f9f</color>
     <color name="text_price">#f55555</color>
+    <color name="text_source">#2ec3e7</color>
 
     <color name="bg_list_item">#ffffff</color>
     <color name="bg_list_item_clicked">#fffbf0</color>
