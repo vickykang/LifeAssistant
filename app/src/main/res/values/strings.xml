@@ -7,4 +7,12 @@
 
     <string name="result_empty">搜不到哦，再试试吧</string>
     <string name="result_fail">失败了，请重试</string>
+
+    <string name="book_ticket">预订机票</string>
+    <string name="book">预订</string>
+
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+
+    <string name="price">价格</string>
 </resources>

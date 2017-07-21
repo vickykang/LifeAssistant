@@ -109,6 +109,16 @@ public class DataManager {
         return null;
     }
 
+    public static String formatDuration(Context context, int duration) {
+        StringBuilder builder = new StringBuilder();
+        int h = duration / 60;
+        if (h > 0) {
+            builder.append(h).append(context.getString(R.string.hour));
+        }
+        builder.append(duration - h * 60).append(context.getString(R.string.minute));
+        return builder.toString();
+    }
+
     private class TicketPriceComparator implements Comparator<TicketBean> {
 
         @Override

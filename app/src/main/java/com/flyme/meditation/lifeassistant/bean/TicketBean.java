@@ -1,5 +1,7 @@
 package com.flyme.meditation.lifeassistant.bean;
 
+import com.flyme.meditation.lifeassistant.database.ClazzBean;
+
 import java.util.List;
 
 /**
@@ -13,9 +15,10 @@ public class TicketBean extends BaseBean {
     private TimeBean startTime;
     private TimeBean endTime;
     private AirBean air;
-    private long duration;
+    private int duration;
     private int price;
     private boolean isNonstop;
+    private List<ClazzBean> clazzs;
 
     public SiteBean getStartSite() {
         return startSite;
@@ -57,11 +60,11 @@ public class TicketBean extends BaseBean {
         this.air = air;
     }
 
-    public long getDuration() {
+    public int getDuration() {
         return duration;
     }
 
-    public void setDuration(long duration) {
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 
@@ -79,5 +82,13 @@ public class TicketBean extends BaseBean {
 
     public void setNonstop(boolean nonstop) {
         isNonstop = nonstop;
+    }
+
+    public List<ClazzBean> getClazzs() {
+        return clazzs;
+    }
+
+    public void setClazzs(List<ClazzBean> clazzs) {
+        this.clazzs = clazzs;
     }
 }

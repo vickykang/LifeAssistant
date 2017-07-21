@@ -9,4 +9,9 @@
 
     <color name="bg_list_item">#ffffff</color>
     <color name="bg_list_item_clicked">#fffbf0</color>
+
+    <color name="btn_normal">#e8853b</color>
+    <color name="btn_clicked">#e66233</color>
+
+    <color name="divider">#ffffff</color>
 </resources>

@@ -105,9 +105,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mEnd = tmp;
         if (!TextUtils.isEmpty(mStart)) {
             mStartEditText.setText(mStart);
+        } else {
+            mStartEditText.setText("");
         }
         if (!TextUtils.isEmpty(mEnd)) {
             mEndEditText.setText(mEnd);
+        } else {
+            mEndEditText.setText("");
         }
     }
 

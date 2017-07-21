@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/search_text_height"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <EditText
@@ -21,19 +22,25 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:text="广州" />
 
         <ImageView
             android:id="@+id/iv_switch"
             android:layout_width="@dimen/switch_size"
             android:layout_height="@dimen/switch_size"
-            android:src="@drawable/ic_swap_horiz_black_24dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/btn_swap" />
 
         <EditText
             android:id="@+id/edt_end"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:text="厦门"  />
 
     </LinearLayout>
@@ -43,13 +50,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/search_text_height"
-        android:layout_marginTop="@dimen/padding_vertical_main" />
+        android:layout_marginTop="@dimen/padding_vertical_main"
+        android:textSize="@dimen/font_normal" />
 
     <Button
         android:id="@+id/btn_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_vertical_main"
+        android:background="@drawable/bg_button"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@android:color/white"
         android:text="@string/search"/>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/text_empty"
+        android:text="demo数据有限，建议搜索：广州-厦门 2017-10-01" />
 
 </LinearLayout>

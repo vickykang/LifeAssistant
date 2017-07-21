@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -20,7 +21,10 @@ import java.util.List;
  * Created by kangweodai on 20/07/17.
  */
 
-public class FakeResultActivity extends AppCompatActivity {
+public class FakeResultActivity extends AppCompatActivity
+        implements AdapterView.OnItemClickListener {
+
+    public static final String EXTRA_TICKET = "ticket";
 
     private ListView mListView;
     private View mEmptyView;
@@ -53,6 +57,7 @@ public class FakeResultActivity extends AppCompatActivity {
 
         mAdapter = new TicketAdapter();
         mListView.setAdapter(mAdapter);
+        mListView.setOnItemClickListener(this);
 
         initData();
     }
@@ -64,6 +69,9 @@ public class FakeResultActivity extends AppCompatActivity {
             mStart = intent.getStringExtra(MainActivity.EXTRA_START_SITE);
             mEnd = intent.getStringExtra(MainActivity.EXTRA_END_SITE);
             mDate = (Calendar) intent.getSerializableExtra(MainActivity.EXTRA_SELECTED_DATE);
+
+            setTitle(mStart + " - " + mEnd);
+
             search();
         } else {
             onFail();
@@ -96,6 +104,13 @@ public class FakeResultActivity extends AppCompatActivity {
         mListView.setVisibility(View.GONE);
         mEmptyView.setVisibility(View.VISIBLE);
         mFailView.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent = new Intent(this, FakeTicketActivity.class);
+        intent.putExtra(EXTRA_TICKET, mTickets.get(position));
+        startActivity(intent);
     }
 
     private class TicketAdapter extends BaseAdapter {

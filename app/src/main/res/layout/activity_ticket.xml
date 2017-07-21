@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="@dimen/padding_horizontal_main"
-    android:background="@drawable/bg_ticket_result_item">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="深圳航空 ZH9979 2017-10-01 周日" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:layout_marginTop="12dip"
+        android:gravity="center">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,16 +38,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dip"
                 android:textSize="@dimen/font_small"
-                android:text="白云" />
+                android:text="白云机场" />
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="96dip"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_go" />
+            android:layout_marginStart="24dip"
+            android:layout_marginEnd="24dip"
+            android:gravity="center"
+            android:drawableBottom="@drawable/ic_arrow_right"
+            android:text="1小时25分钟"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -55,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_large"
                 android:textStyle="bold"
-                android:text="08:25"  />
+                android:text="06:25" />
 
             <TextView
                 android:id="@+id/tv_end_site"
@@ -63,32 +72,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dip"
                 android:textSize="@dimen/font_small"
-                android:text="高崎" />
+                android:text="白云机场" />
 
         </LinearLayout>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/tv_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:textSize="@dimen/font_large"
-            android:textStyle="bold"
-            android:textColor="@color/text_price"
-            android:text="￥1155" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_air"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dip"
-        android:text="南航 CZ6412 | 空客321(中)" />
+        android:background="@color/bg_list_item"
+        android:layout_marginTop="24dp"
+        android:text="@string/price"
+        android:textSize="@dimen/font_normal"
+        android:padding="@dimen/padding_horizontal_main"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/bg_list_item"
+        android:dividerHeight="1dp" />
 
 </LinearLayout>

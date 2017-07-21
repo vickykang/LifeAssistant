@@ -21,6 +21,9 @@
 
         <activity android:name=".FakeResultActivity"
             android:label="@string/search_result" />
+
+        <activity android:name=".FakeTicketActivity"
+            android:label="@string/book_ticket" />
     </application>
 
 </manifest>
