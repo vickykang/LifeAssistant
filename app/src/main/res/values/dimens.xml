@@ -10,4 +10,6 @@
     <dimen name="switch_size">24dip</dimen>
     <dimen name="search_text_height">56dip</dimen>
     <dimen name="ticket_result_min_height">96dip</dimen>
+
+    <dimen name="source_tab_height">36dip</dimen>
 </resources>

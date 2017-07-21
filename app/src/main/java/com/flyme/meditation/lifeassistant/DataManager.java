@@ -6,7 +6,9 @@ import android.util.Log;
 
 import com.flyme.meditation.lifeassistant.bean.FlightBean;
 import com.flyme.meditation.lifeassistant.bean.SiteBean;
+import com.flyme.meditation.lifeassistant.bean.SourceBean;
 import com.flyme.meditation.lifeassistant.bean.TicketBean;
+import com.flyme.meditation.lifeassistant.database.ClazzBean;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -18,7 +20,9 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by kangweodai on 19/07/17.
@@ -54,6 +58,8 @@ public class DataManager {
         String date = formatDate(calendar);
         List<TicketBean> results = new ArrayList<>();
 
+        SourcePriceComparator sourceComparator = new SourcePriceComparator();
+
         for (TicketBean ticket : mTickets) {
 
             SiteBean startSite = ticket.getStartSite();
@@ -62,6 +68,7 @@ public class DataManager {
             if (ticket.getStartTime().getDate().equals (date) &&
                     (startSite.getCity().equals(start) || startSite.getName().equals(start))
                     && (endSite.getCity().equals(end) || endSite.getName().equals(end))) {
+                Collections.sort(ticket.getSources(), sourceComparator);
                 results.add(ticket);
             }
         }
@@ -131,10 +138,33 @@ public class DataManager {
             }
             return o1.getStartTime().getTime().compareTo(o2.getStartTime().getTime());
         }
+    }
+
+    private class SourcePriceComparator implements Comparator<SourceBean> {
 
         @Override
-        public boolean equals(Object obj) {
-            return false;
+        public int compare(SourceBean o1, SourceBean o2) {
+            int p1 = -1;
+            int p2 = -1;
+            List<ClazzBean> c1 = o1.getClazzs();
+            List<ClazzBean> c2 = o2.getClazzs();
+            ClazzPriceComparator cc = new ClazzPriceComparator();
+            if (c1 != null && c1.size() > 0) {
+                Collections.sort(c1, cc);
+                p1 = c1.get(0).getPrice();
+            }
+            if (c2 != null && c2.size() > 0) {
+                Collections.sort(c2, cc);
+                p2 = c2.get(0).getPrice();
+            }
+            return p1 > p2 ? 1 : (p1 == p2 ? 0 : -1);
+        }
+    }
+
+    private class ClazzPriceComparator implements Comparator<ClazzBean> {
+        @Override
+        public int compare(ClazzBean o1, ClazzBean o2) {
+            return o1.getPrice() > o2.getPrice() ? 1 : (o1.getPrice() == o2.getPrice() ? 0 : -1);
         }
     }
 }

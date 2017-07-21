@@ -18,8 +18,7 @@ public class TicketBean extends BaseBean {
     private int duration;
     private int price;
     private boolean isNonstop;
-    private List<ClazzBean> clazzs;
-    private SourceBean source;
+    private List<SourceBean> sources;
 
     public SiteBean getStartSite() {
         return startSite;
@@ -85,19 +84,11 @@ public class TicketBean extends BaseBean {
         isNonstop = nonstop;
     }
 
-    public List<ClazzBean> getClazzs() {
-        return clazzs;
+    public List<SourceBean> getSources() {
+        return sources;
     }
 
-    public void setClazzs(List<ClazzBean> clazzs) {
-        this.clazzs = clazzs;
-    }
-
-    public SourceBean getSource() {
-        return source;
-    }
-
-    public void setSource(SourceBean source) {
-        this.source = source;
+    public void setSources(List<SourceBean> sources) {
+        this.sources = sources;
     }
 }
