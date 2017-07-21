@@ -1,46 +1,64 @@
 [
   {
-    "startSite":{
-      "name":"白云机场",
-      "province":"广东",
-      "city":"广州"
+    "startSite": {
+      "name": "白云机场",
+      "province": "广东",
+      "city": "广州"
     },
-    "endSite":{
-      "name":"高崎机场",
-      "province":"福建",
-      "city":"厦门"
+    "endSite": {
+      "name": "高崎机场",
+      "province": "福建",
+      "city": "厦门"
     },
-    "startTime":{
-      "date":"2017-10-01",
-      "time":"06:50"
+    "startTime": {
+      "date": "2017-10-01",
+      "time": "06:50"
     },
-    "endTime":{
-      "date":"2017-10-01",
-      "time":"08:25"
+    "endTime": {
+      "date": "2017-10-01",
+      "time": "08:25"
     },
-    "duration":"95",
-    "air":{
-      "company":"南方航空",
-      "name":"CZ3723",
-      "model":"空客A319",
-      "size":"中"
+    "duration": "95",
+    "air": {
+      "company": "南方航空",
+      "name": "CZ3723",
+      "model": "空客A319",
+      "size": "中"
     },
-    "price":"1134",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "1134",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"1134",
-        "clazz":"经济舱"
+        "price": "1134",
+        "clazz": "经济舱"
       },
       {
-        "price":"2585",
-        "clazz":"头等舱"
+        "price": "2585",
+        "clazz": "头等舱"
       }
     ],
-    "source":{
-      "name":"去哪儿",
-      "url":""
-    }
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1134",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "1155",
+        "url": ""
+      }
+    ]
   },
   {
     "startSite": {
@@ -53,187 +71,297 @@
       "province": "福建",
       "city": "厦门"
     },
-    "startTime":{
-      "date":"2017-07-22",
-      "time":"14:30"
+    "startTime": {
+      "date": "2017-07-22",
+      "time": "14:30"
     },
-    "endTime":{
-      "date":"2017-07-22",
-      "time":"15:55"
+    "endTime": {
+      "date": "2017-07-22",
+      "time": "15:55"
     },
-    "duration":"85",
-    "air":{
-      "company":"厦门航空",
-      "name":"MF8334",
-      "model":"波音737-800",
-      "size":"中"
+    "duration": "85",
+    "air": {
+      "company": "厦门航空",
+      "name": "MF8334",
+      "model": "波音737-800",
+      "size": "中"
     },
-    "price":"890",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "890",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"890",
-        "clazz":"经济舱"
+        "price": "890",
+        "clazz": "经济舱"
       },
       {
-        "price":"2055",
-        "clazz":"头等舱"
+        "price": "2055",
+        "clazz": "头等舱"
+      }
+    ],
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1088",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "899",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "890",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "898",
+        "url": ""
       }
     ]
   },
   {
-    "startSite":{
-      "name":"白云机场",
-      "province":"广东",
-      "city":"广州"
+    "startSite": {
+      "name": "白云机场",
+      "province": "广东",
+      "city": "广州"
     },
-    "endSite":{
-      "name":"高崎机场",
-      "province":"福建",
-      "city":"厦门"
+    "endSite": {
+      "name": "高崎机场",
+      "province": "福建",
+      "city": "厦门"
     },
-    "startTime":{
-      "date":"2017-10-01",
-      "time":"07:10"
+    "startTime": {
+      "date": "2017-10-01",
+      "time": "07:10"
     },
-    "endTime":{
-      "date":"2017-10-01",
-      "time":"08:35"
+    "endTime": {
+      "date": "2017-10-01",
+      "time": "08:35"
     },
-    "duration":"85",
-    "air":{
-      "company":"深圳航空",
-      "name":"ZH9979",
-      "model":"空客A320",
-      "size":"中"
+    "duration": "85",
+    "air": {
+      "company": "深圳航空",
+      "name": "ZH9979",
+      "model": "空客A320",
+      "size": "中"
     },
-    "price":"780",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "780",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"780",
-        "clazz":"经济舱"
+        "price": "780",
+        "clazz": "经济舱"
       },
       {
-        "price":"1850",
-        "clazz":"头等舱"
+        "price": "1850",
+        "clazz": "头等舱"
+      }
+    ],
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "788",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "780",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "788",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "800",
+        "url": ""
       }
     ]
   },
   {
-    "startSite":{
-      "name":"白云机场",
-      "province":"广东",
-      "city":"广州"
+    "startSite": {
+      "name": "白云机场",
+      "province": "广东",
+      "city": "广州"
     },
-    "endSite":{
-      "name":"高崎机场",
-      "province":"福建",
-      "city":"厦门"
+    "endSite": {
+      "name": "高崎机场",
+      "province": "福建",
+      "city": "厦门"
     },
-    "startTime":{
-      "date":"2017-10-01",
-      "time":"12:20"
+    "startTime": {
+      "date": "2017-10-01",
+      "time": "12:20"
     },
-    "endTime":{
-      "date":"2017-10-01",
-      "time":"13:45"
+    "endTime": {
+      "date": "2017-10-01",
+      "time": "13:45"
     },
-    "duration":"85",
-    "air":{
-      "company":"南方航空",
-      "name":"CZ3741",
-      "model":"波音737-800",
-      "size":"中"
+    "duration": "85",
+    "air": {
+      "company": "南方航空",
+      "name": "CZ3741",
+      "model": "波音737-800",
+      "size": "中"
     },
-    "price":"1155",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "1155",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"1155",
-        "clazz":"经济舱"
+        "price": "1155",
+        "clazz": "经济舱"
       },
       {
-        "price":"2455",
-        "clazz":"头等舱"
+        "price": "2455",
+        "clazz": "头等舱"
+      }
+    ],
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1166",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "1155",
+        "url": ""
       }
     ]
   },
   {
-    "startSite":{
-      "name":"白云机场",
-      "province":"广东",
-      "city":"广州"
+    "startSite": {
+      "name": "白云机场",
+      "province": "广东",
+      "city": "广州"
     },
-    "endSite":{
-      "name":"高崎机场",
-      "province":"福建",
-      "city":"厦门"
+    "endSite": {
+      "name": "高崎机场",
+      "province": "福建",
+      "city": "厦门"
     },
-    "startTime":{
-      "date":"2017-10-01",
-      "time":"15:35"
+    "startTime": {
+      "date": "2017-10-01",
+      "time": "15:35"
     },
-    "endTime":{
-      "date":"2017-10-01",
-      "time":"16:55"
+    "endTime": {
+      "date": "2017-10-01",
+      "time": "16:55"
     },
-    "duration":"85",
-    "air":{
-      "company":"南方航空",
-      "name":"CZ3879",
-      "model":"",
-      "size":""
+    "duration": "85",
+    "air": {
+      "company": "南方航空",
+      "name": "CZ3879",
+      "model": "",
+      "size": ""
     },
-    "price":"960",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "960",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"960",
-        "clazz":"经济舱"
+        "price": "960",
+        "clazz": "经济舱"
       },
       {
-        "price":"1620",
-        "clazz":"头等舱"
+        "price": "1620",
+        "clazz": "头等舱"
+      }
+    ],
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "988",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "998",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "960",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "988",
+        "url": ""
       }
     ]
   },
   {
-    "startSite":{
-      "name":"白云机场",
-      "province":"广东",
-      "city":"广州"
+    "startSite": {
+      "name": "白云机场",
+      "province": "广东",
+      "city": "广州"
     },
-    "endSite":{
-      "name":"高崎机场",
-      "province":"福建",
-      "city":"厦门"
+    "endSite": {
+      "name": "高崎机场",
+      "province": "福建",
+      "city": "厦门"
     },
-    "startTime":{
-      "date":"2017-10-01",
-      "time":"09:40"
+    "startTime": {
+      "date": "2017-10-01",
+      "time": "09:40"
     },
-    "endTime":{
-      "date":"2017-10-01",
-      "time":"11:10"
+    "endTime": {
+      "date": "2017-10-01",
+      "time": "11:10"
     },
-    "duration":"90",
-    "air":{
-      "company":"厦门航空",
-      "name":"MF8306",
-      "model":"波音737-800",
-      "size":"中"
+    "duration": "90",
+    "air": {
+      "company": "厦门航空",
+      "name": "MF8306",
+      "model": "波音737-800",
+      "size": "中"
     },
-    "price":"1155",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "1155",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"1155",
-        "clazz":"经济舱"
+        "price": "1155",
+        "clazz": "经济舱"
       },
       {
-        "price":"2855",
-        "clazz":"头等舱"
+        "price": "2855",
+        "clazz": "头等舱"
+      }
+    ],
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "1155",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "1188",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "1218",
+        "url": ""
       }
     ]
   },
@@ -248,39 +376,61 @@
       "province": " ",
       "city": "北京"
     },
-    "startTime":{
-      "date":"2017-07-22",
-      "time":"21:50"
+    "startTime": {
+      "date": "2017-07-22",
+      "time": "21:50"
     },
-    "endTime":{
-      "date":"2017-07-23",
-      "time":"01:00"
+    "endTime": {
+      "date": "2017-07-23",
+      "time": "01:00"
     },
-    "duration":"190",
-    "air":{
-      "company":"海南航空",
-      "name":"HU7810",
-      "model":"波音787-9",
-      "size":"大"
+    "duration": "190",
+    "air": {
+      "company": "海南航空",
+      "name": "HU7810",
+      "model": "波音787-9",
+      "size": "大"
     },
-    "price":"1424",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "1424",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"1424",
-        "clazz":"经济舱"
+        "price": "1424",
+        "clazz": "经济舱"
       },
       {
-        "price":"2265",
-        "clazz":"公务舱"
+        "price": "2265",
+        "clazz": "公务舱"
       },
       {
-        "price":"3605",
-        "clazz":"公务舱"
+        "price": "3605",
+        "clazz": "公务舱"
       },
       {
-        "price":"5705",
-        "clazz":"公务舱"
+        "price": "5705",
+        "clazz": "公务舱"
+      }
+    ],
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1424",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "1456",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "1488",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "1518",
+        "url": ""
       }
     ]
   },
@@ -295,31 +445,53 @@
       "province": "福建",
       "city": "厦门"
     },
-    "startTime":{
-      "date":"2017-10-01",
-      "time":"14:30"
+    "startTime": {
+      "date": "2017-10-01",
+      "time": "14:30"
     },
-    "endTime":{
-      "date":"2017-10-01",
-      "time":"15:55"
+    "endTime": {
+      "date": "2017-10-01",
+      "time": "15:55"
     },
-    "duration":"85",
-    "air":{
-      "company":"厦门航空",
-      "name":"MF8334",
-      "model":"波音737-800",
-      "size":"中"
+    "duration": "85",
+    "air": {
+      "company": "厦门航空",
+      "name": "MF8334",
+      "model": "波音737-800",
+      "size": "中"
     },
-    "price":"1155",
-    "isNonstop":true,
-    "clazzs":[
+    "price": "1155",
+    "isNonstop": true,
+    "clazzs": [
       {
-        "price":"1155",
-        "clazz":"经济舱"
+        "price": "1155",
+        "clazz": "经济舱"
       },
       {
-        "price":"2455",
-        "clazz":"头等舱"
+        "price": "2455",
+        "clazz": "头等舱"
+      }
+    ],
+    "sources": [
+      {
+        "name": "去哪儿",
+        "price": "1288",
+        "url": ""
+      },
+      {
+        "name": "携程",
+        "price": "1218",
+        "url": ""
+      },
+      {
+        "name": "飞猪",
+        "price": "1155",
+        "url": ""
+      },
+      {
+        "name": "蚂蜂窝",
+        "price": "1188",
+        "url": ""
       }
     ]
   }
