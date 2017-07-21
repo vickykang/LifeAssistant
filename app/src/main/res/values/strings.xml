@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">机票助手</string>
     <string name="login">登 录</string>
+    <string name="reg">立即注册</string>
     <string name="search">搜 索</string>
 
     <string name="select_date">选择日期</string>

@@ -30,6 +30,7 @@ public class Loginctivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_login:
                 startActivity(new Intent(this, MainActivity.class));
+                finish();
                 break;
         }
     }
